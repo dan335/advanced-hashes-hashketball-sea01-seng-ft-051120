@@ -137,4 +137,6 @@ def num_points_scored(name)
   player = players.find do |pl|
     pl[:player_name] == name
   end
+  
+  player[:points]
 end
