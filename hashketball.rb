@@ -183,6 +183,6 @@ def player_numbers(team_name)
   players = players_in_team(team_name)
   
   players.map do |player|
-    return player[:number]
+    player[:number]
   end
 end
