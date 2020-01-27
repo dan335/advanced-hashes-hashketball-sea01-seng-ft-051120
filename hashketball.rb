@@ -161,5 +161,8 @@ end
 
 
 def team_names
-  
+  names = []
+  names << game_hash[:home][:team_name]
+  names << game_hash[:away][:team_name]
+  names
 end
