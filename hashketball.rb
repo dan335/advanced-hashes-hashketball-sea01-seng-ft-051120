@@ -166,3 +166,8 @@ def team_names
   names << game_hash[:away][:team_name]
   names
 end
+
+
+def player_numbers
+  
+end
