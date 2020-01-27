@@ -8,7 +8,7 @@ def game_hash
     },
     :away => {
       :team_name => "Charlotte Hornets",
-      :colors => ["Turqu"]
+      :colors => ["Turquoise", "Purple"]
     }
   }
 end
