@@ -129,12 +129,12 @@ end
 
 
 def players
-  players = []
-  
-  players = players + game_hash[:home][:players] + game_hash[:away][:players]
+  game_hash[:home][:players] + game_hash[:away][:players]
 end
 
 
 def num_points_scored(name)
-  
+  player = players.find do |pl|
+    pl[:player_name] == name
+  end
 end
