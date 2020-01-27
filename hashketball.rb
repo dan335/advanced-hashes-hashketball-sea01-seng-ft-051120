@@ -131,7 +131,7 @@ end
 def players
   players = []
   
-  
+  players = players + game_hash[:home][:players] + game_hash[:away][:players]
 end
 
 
