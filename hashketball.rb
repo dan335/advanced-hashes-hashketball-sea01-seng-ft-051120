@@ -168,6 +168,21 @@ def team_names
 end
 
 
-def player_numbers
+def players_in_team(team_name)
+  if (game_hash[:home][:team_name] == team_name)
+    return game_hash[:home][:players]
+  elsif (game_hash[:away][:team_name] == team_name)
+    return game_hash[:away][:players]
+  end
   
+  return []
+end
+
+
+def player_numbers(team_name)
+  players = players_in_team(team_name)
+  
+  players.map do |player|
+    return player[:number]
+  end
 end
