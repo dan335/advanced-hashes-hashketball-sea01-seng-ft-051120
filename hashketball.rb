@@ -140,3 +140,12 @@ def num_points_scored(name)
   
   player[:points]
 end
+
+
+def shoe_size(name)
+  player = players.find do |pl|
+    pl[:player_name] == name
+  end
+  
+  player[:shoe]
+end
