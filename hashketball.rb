@@ -129,6 +129,8 @@ end
 
 
 def players
+  players = []
+  
   
 end
 
